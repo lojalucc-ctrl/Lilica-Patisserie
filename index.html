@@ -1,0 +1,2651 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- SEO -->
+
+<meta
+  name="description"
+  content="Bem-casados artesanais sofisticados para casamentos inesquecíveis. Encante seus convidados com uma experiência elegante e memorável."
+>
+
+<meta
+  name="keywords"
+  content="bem casado, bem casados casamento, doces finos casamento, lembrança casamento, bem casado artesanal"
+>
+
+<meta
+  name="author"
+  content="Lilica Patisserie"
+>
+
+<!-- RESPONSIVO -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- IMAGEM DE DESTAQUE GOOGLE / WHATSAPP -->
+
+<meta
+  property="og:title"
+  content="Bem-casados Artesanais | Lilica Patisserie"
+>
+
+<meta
+  property="og:description"
+  content="Transforme o seu casamento em uma experiência inesquecível com bem-casados artesanais sofisticados."
+>
+
+<meta
+  property="og:image"
+  content="https://lilicapatisserie.com.br/images/bem-casados-lilica.png"
+>
+
+<meta
+  property="og:url"
+  content="https://lilicapatisserie.com.br/"
+>
+
+<meta
+  property="og:type"
+  content="website"
+>
+
+<!-- TWITTER -->
+
+<meta
+  name="twitter:card"
+  content="summary_large_image"
+>
+
+<meta
+  name="twitter:title"
+  content="Bem-casados Artesanais | Lilica Patisserie"
+>
+
+<meta
+  name="twitter:description"
+  content="Bem-casados sofisticados feitos para casamentos inesquecíveis."
+>
+
+<meta
+  name="twitter:image"
+  content="https://lilicapatisserie.com.br/images/bem-casados-lilica.png"
+>
+<title>Bem-casados Artesanais</title>
+
+<!-- GOOGLE FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+<!-- SWIPER -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<style>
+/* =========================================
+BULLETS SWIPER
+========================================= */
+
+.swiper-pagination{
+  margin-top:50px !important;
+}
+
+.swiper-pagination-bullet{
+
+  width:12px;
+  height:12px;
+
+  background:#CBB6A4 !important;
+
+  opacity:.45;
+
+  transition:.4s ease;
+
+  border-radius:999px;
+
+}
+
+.swiper-pagination-bullet-active{
+
+  width:42px;
+
+  background:#3B2A22 !important;
+
+  opacity:1;
+
+}
+
+/* =========================================
+SCROLLBAR GLOBAL
+========================================= */
+
+/* CHROME / EDGE / SAFARI */
+
+::-webkit-scrollbar{
+  width:12px;
+}
+
+::-webkit-scrollbar-track{
+  background:#F3EEE8;
+}
+
+::-webkit-scrollbar-thumb{
+
+  background:linear-gradient(
+    to bottom,
+    #D7C3B1,
+    #8E6F5B
+  );
+
+  border-radius:999px;
+
+  border:2px solid #F3EEE8;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+  background:linear-gradient(
+    to bottom,
+    #C9B19B,
+    #6F5647
+  );
+
+}
+
+/* FIREFOX */
+
+html{
+
+  scrollbar-width:thin;
+
+  scrollbar-color:#8E6F5B #F3EEE8;
+
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#F6F3EF;
+  font-family:'Montserrat', sans-serif;
+  color:#3B332E;
+  overflow-x:hidden;
+}
+
+img{
+  width:100%;
+  display:block;
+}
+
+a{
+  text-decoration:none;
+}
+
+.container{
+  width:100%;
+  max-width:1240px;
+  margin:0 auto;
+  padding:0 24px;
+}
+
+section{
+  position:relative;
+  overflow:hidden;
+}
+
+/* =========================================
+HEADER
+========================================= */
+
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:999;
+  padding:24px 0;
+  transition:.4s;
+}
+
+header.scrolled{
+  background:rgba(16,10,7,.92);
+  backdrop-filter:blur(10px);
+  padding:9px 0;
+}
+
+.header-flex{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  color:#fff;
+  font-family:'Cormorant Garamond', serif;
+  font-size:38px;
+  position:relative;
+  z-index:1001;
+}
+.logo img{
+width: 9rem;
+}
+/* =========================================
+MENU
+========================================= */
+
+.hamburger{
+  width:42px;
+  height:42px;
+  border:1px solid rgba(255,255,255,.3);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:5px;
+  cursor:pointer;
+  position:relative;
+  z-index:1001;
+}
+
+.hamburger span{
+  width:22px;
+  height:1px;
+  background:#fff;
+  transition:.4s;
+}
+
+.hamburger.active span:nth-child(1){
+  transform:translateY(6px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2){
+  opacity:0;
+}
+
+.hamburger.active span:nth-child(3){
+  transform:translateY(-6px) rotate(-45deg);
+}
+
+.menu{
+  position:fixed;
+  inset:0;
+  background:#1A120E;
+  z-index:1000;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  opacity:0;
+  pointer-events:none;
+
+  transition:.5s ease;
+}
+
+.menu.active{
+  opacity:1;
+  pointer-events:all;
+}
+
+.menu-close{
+  position:absolute;
+  top:28px;
+  right:28px;
+
+  width:54px;
+  height:54px;
+
+  border:1px solid rgba(255,255,255,.25);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  color:#fff;
+
+  cursor:pointer;
+
+  transition:.4s;
+}
+
+.menu-close:hover{
+  transform:rotate(90deg);
+}
+
+.menu-links{
+  display:flex;
+  flex-direction:column;
+  gap:28px;
+  text-align:center;
+}
+
+.menu-link{
+  color:#fff;
+  font-family:'Cormorant Garamond', serif;
+  font-size:60px;
+  transition:.4s;
+}
+
+.menu-link:hover{
+  color:#D9C5B3;
+}
+
+/* =========================================
+HERO
+========================================= */
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background:
+  linear-gradient(rgba(0,0,0,.62), rgba(0,0,0,.62)),
+  url("bem-casados-lilica.png")
+  center center/cover no-repeat;
+
+  animation:zoomHero 12s ease-in-out infinite alternate;
+}
+
+@keyframes zoomHero{
+
+  from{
+    transform:scale(1);
+  }
+
+  to{
+    transform:scale(1.08);
+  }
+
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  text-align:center;
+  color:#fff;
+
+  width:100%;
+
+  padding-top:140px;
+  padding-bottom:100px;
+}
+
+.hero-subtitle{
+  font-family:'Cormorant Garamond', serif;
+  font-size:34px;
+  margin-bottom:24px;
+}
+
+.hero h1{
+  font-family:'Cormorant Garamond', serif;
+  font-size:clamp(52px, 8vw, 110px);
+  line-height:.95;
+  max-width:1000px;
+  margin:0 auto 28px;
+}
+
+.hero p{
+  max-width:760px;
+  margin:0 auto 42px;
+  line-height:2;
+  color:rgba(255,255,255,.9);
+}
+
+.btn{
+  min-width:240px;
+  height:60px;
+
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  border:1px solid rgba(255,255,255,.7);
+
+  color:#fff;
+
+  transition:.4s;
+}
+
+.btn:hover{
+  background:#fff;
+  color:#1A120E;
+}
+
+/* =========================================
+SECTION TITLE
+========================================= */
+
+.section{
+  padding:120px 0;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:70px;
+}
+
+.section-title span{
+  display:block;
+  font-family:'Cormorant Garamond', serif;
+  font-size:34px;
+  color:#8C786A;
+  margin-bottom:12px;
+}
+
+.section-title h2{
+  font-family:'Cormorant Garamond', serif;
+  font-size:72px;
+  line-height:1;
+  font-weight:500;
+}
+
+/* =========================================
+STORY
+========================================= */
+
+.story{
+  background:#fff;
+}
+
+.story-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:80px;
+  align-items:center;
+}
+
+.story-image{
+  overflow:hidden;
+}
+
+.story-image img{
+  height:700px;
+  object-fit:cover;
+  transition:1s;
+}
+/* =========================================
+FORMULÁRIO CTA
+COLE NO CSS
+========================================= */
+
+.cta-form-wrapper{
+
+  width:100%;
+  max-width:1000px;
+
+  margin:60px auto 0;
+
+  background:rgba(255,255,255,.05);
+
+  border:1px solid rgba(255,255,255,.08);
+
+  backdrop-filter:blur(10px);
+
+  padding:50px;
+
+}
+
+.cta-form{
+
+  width:100%;
+
+}
+
+.form-grid{
+
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:24px;
+
+  margin-bottom:24px;
+
+}
+
+.form-group{
+
+  display:flex;
+  flex-direction:column;
+
+}
+
+.form-group label{
+
+  margin-bottom:12px;
+
+  font-size:14px;
+
+  letter-spacing:.5px;
+
+  color:rgba(255,255,255,.75);
+
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+  width:100%;
+
+  background:rgba(255,255,255,.08);
+
+  border:1px solid rgba(255,255,255,.12);
+
+  height:60px;
+
+  padding:0 20px;
+
+  color:#fff;
+
+  font-size:15px;
+
+  font-family:'Montserrat', sans-serif;
+
+  outline:none;
+
+  transition:.4s ease;
+
+}
+
+.form-group textarea{
+
+  height:150px;
+
+  padding-top:20px;
+
+  resize:none;
+
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+
+  border-color:#D6C2B0;
+
+  background:rgba(255,255,255,.1);
+
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+
+  color:rgba(255,255,255,.45);
+
+}
+
+.form-group select{
+
+  appearance:none;
+
+  cursor:pointer;
+
+}
+
+.form-group select option{
+
+  color:#1A120E;
+
+}
+
+.form-group.full{
+
+  width:100%;
+
+  margin-bottom:30px;
+
+}
+
+.form-btn{
+
+  width:100%;
+
+  border:none;
+
+  background:#D6C2B0;
+
+  color:#1A120E;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+}
+
+.form-btn:hover{
+
+  background:#fff;
+
+  color:#1A120E;
+
+}
+
+/* =========================================
+RESPONSIVO
+========================================= */
+
+@media(max-width:768px){
+
+  .cta-form-wrapper{
+
+    padding:30px 22px;
+
+    margin-top:40px;
+
+  }
+
+  .form-grid{
+
+    grid-template-columns:1fr;
+
+    gap:18px;
+
+  }
+
+}
+.story-image:hover img{
+  transform:scale(1.05);
+}
+
+.story-text h2{
+  font-family:'Cormorant Garamond', serif;
+  font-size:66px;
+  line-height:1;
+  margin-bottom:30px;
+}
+
+.story-text p{
+  line-height:2;
+  margin-bottom:24px;
+  color:#655C57;
+}
+
+.check-list{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  margin-top:34px;
+}
+
+.check-item{
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  line-height:1.8;
+}
+
+.check-icon{
+  width:26px;
+  height:26px;
+  border-radius:50%;
+  background:#D6C2B0;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+  margin-top:4px;
+}
+
+/* =========================================
+SERVICES
+========================================= */
+
+.services{
+  background:#F6F3EF;
+}
+
+.swiper{
+  overflow:visible !important;
+}
+
+.service-card{
+  height:620px;
+  position:relative;
+  overflow:hidden;
+}
+
+.service-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:1s;
+}
+
+.service-card:hover img{
+  transform:scale(1.08);
+}
+
+.service-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top, rgba(0,0,0,.82), rgba(0,0,0,.1));
+}
+
+.service-content{
+  position:absolute;
+  left:30px;
+  right:30px;
+  bottom:30px;
+  z-index:2;
+  color:#fff;
+}
+
+.service-content h3{
+  font-family:'Cormorant Garamond', serif;
+  font-size:42px;
+  margin-bottom:16px;
+}
+
+.service-content p{
+  line-height:1.9;
+  margin-bottom:28px;
+}
+
+.service-btn{
+  width:220px;
+  height:54px;
+  border:1px solid rgba(255,255,255,.7);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  color:#fff;
+  transition:.4s;
+}
+
+.service-btn:hover{
+  background:#fff;
+  color:#1A120E;
+}
+
+.swiper-pagination{
+  position:relative;
+  margin-top:45px;
+}
+/* =========================================
+FOOTER
+COLE NO CSS
+========================================= */
+
+.footer{
+
+  background:#140E0B;
+
+  color:#fff;
+
+  padding-top:100px;
+
+  position:relative;
+
+  overflow:hidden;
+
+}
+
+.footer::before{
+
+  content:"";
+
+  position:absolute;
+
+  top:-200px;
+  right:-200px;
+
+  width:500px;
+  height:500px;
+
+  border-radius:50%;
+
+  background:rgba(255,255,255,.03);
+
+}
+
+.footer-top{
+
+  display:grid;
+
+  grid-template-columns:2fr 1fr 1fr 1fr;
+
+  gap:60px;
+
+  padding-bottom:70px;
+
+  border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.footer-logo{
+
+  font-family:'Cormorant Garamond', serif;
+
+  font-size:52px;
+
+  margin-bottom:22px;
+
+  color:#E5D3C4;
+
+}
+.footer-logo img{
+    width: 16rem;
+}
+.footer-brand p{
+
+  line-height:2;
+
+  color:rgba(255,255,255,.72);
+
+  margin-bottom:34px;
+
+  max-width:420px;
+
+}
+
+.footer-btn{
+
+  width:240px;
+  height:58px;
+
+  border:1px solid rgba(255,255,255,.22);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  color:#fff;
+
+  transition:.4s ease;
+
+}
+
+.footer-btn:hover{
+
+  background:#D6C2B0;
+
+  color:#1A120E;
+
+}
+
+.footer-column h3{
+
+  font-family:'Cormorant Garamond', serif;
+
+  font-size:34px;
+
+  margin-bottom:24px;
+
+  color:#E5D3C4;
+
+}
+
+.footer-column ul{
+
+  list-style:none;
+
+  display:flex;
+  flex-direction:column;
+
+  gap:18px;
+
+}
+
+.footer-column ul li{
+
+  color:rgba(255,255,255,.72);
+
+  line-height:1.8;
+
+}
+
+.footer-column ul li a{
+
+  color:rgba(255,255,255,.72);
+
+  transition:.3s ease;
+
+}
+
+.footer-column ul li a:hover{
+
+  color:#D6C2B0;
+
+  padding-left:6px;
+
+}
+
+.footer-phrase{
+
+  color:rgba(255,255,255,.72);
+
+  line-height:2;
+
+}
+
+.footer-bottom{
+
+  padding:28px 0;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+}
+
+.footer-bottom p{
+
+  color:rgba(255,255,255,.45);
+
+  font-size:14px;
+
+  text-align:center;
+
+}
+
+/* =========================================
+RESPONSIVO
+========================================= */
+
+@media(max-width:1024px){
+
+  .footer-top{
+
+    grid-template-columns:1fr 1fr;
+
+  }
+
+}
+
+@media(max-width:768px){
+
+  .footer{
+
+    padding-top:80px;
+
+  }
+
+  .footer-top{
+
+    grid-template-columns:1fr;
+
+    gap:50px;
+
+    padding-bottom:50px;
+
+  }
+
+  .footer-logo{
+
+    font-size:42px;
+
+  }
+
+  .footer-column h3{
+
+    font-size:30px;
+
+  }
+
+  .footer-btn{
+
+    width:100%;
+
+  }
+
+}
+/* =========================================
+BOTÃO VOLTAR AO TOPO
+COLE NO CSS
+========================================= */
+
+.back-to-top{
+
+  position:fixed;
+
+  right:28px;
+  bottom:28px;
+
+  width:44px;
+  height:44px;
+
+  border:none;
+  border-radius:50%;
+
+  background:#1E1511;
+
+  color:#fff;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  cursor:pointer;
+
+  z-index:999;
+
+  opacity:0;
+  visibility:hidden;
+
+  transform:translateY(20px);
+
+  transition:.4s ease;
+
+  box-shadow:0 12px 30px rgba(0,0,0,.18);
+
+}
+
+.back-to-top:hover{
+
+  transform:translateY(-5px);
+
+  background:#D6C2B0;
+
+  color:#1E1511;
+
+}
+
+.back-to-top.active{
+
+  opacity:1;
+  visibility:visible;
+
+  transform:translateY(0);
+
+}
+
+.back-to-top svg{
+
+  width:18px;
+  height:18px;
+
+}
+
+@media(max-width:768px){
+
+  .back-to-top{
+
+    width:56px;
+    height:56px;
+
+    right:18px;
+    bottom:18px;
+
+  }
+
+}
+/* =========================================
+NOVA DOBRA EMOCIONAL
+========================================= */
+
+.emotion-section{
+  position:relative;
+  padding:140px 0;
+}
+
+.emotion-bg{
+  position:absolute;
+  inset:0;
+
+  background:
+  linear-gradient(rgba(18,12,9,.75), rgba(18,12,9,.75)),
+  url("https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=2070&auto=format&fit=crop")
+  center center/cover no-repeat;
+
+  transform:scale(1.05);
+}
+
+.emotion-content{
+  position:relative;
+  z-index:2;
+
+  width:100%;
+  max-width:980px;
+
+  margin:0 auto;
+
+  background:rgba(255,255,255,.08);
+
+  backdrop-filter:blur(10px);
+
+  border:1px solid rgba(255,255,255,.14);
+
+  padding:90px 70px;
+
+  text-align:center;
+}
+
+.emotion-mini{
+  display:block;
+
+  font-family:'Cormorant Garamond', serif;
+  font-size:34px;
+
+  color:rgba(255,255,255,.8);
+
+  margin-bottom:24px;
+}
+
+.emotion-content h2{
+  font-family:'Cormorant Garamond', serif;
+
+  font-size:clamp(42px, 6vw, 84px);
+
+  line-height:1.05;
+
+  color:#fff;
+
+  margin-bottom:30px;
+
+  overflow-wrap:break-word;
+}
+
+.emotion-divider{
+  width:80px;
+  height:1px;
+
+  background:rgba(255,255,255,.4);
+
+  margin:0 auto 30px;
+}
+
+.emotion-content p{
+  max-width:760px;
+  margin:0 auto 30px;
+
+  color:rgba(255,255,255,.88);
+
+  line-height:2;
+}
+
+.emotion-highlight{
+  font-family:'Cormorant Garamond', serif;
+  font-size:38px;
+  line-height:1.3;
+  color:#E4D2C2;
+  margin-bottom:40px;
+}
+
+/* =========================================
+WHY
+========================================= */
+
+.why{
+  background:#fff;
+}
+
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.why-card{
+  background:#F8F4F1;
+  padding:50px 40px;
+  transition:.5s;
+}
+
+.why-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 20px 40px rgba(0,0,0,.06);
+}
+
+.why-number{
+  font-family:'Cormorant Garamond', serif;
+  font-size:72px;
+  color:#D2BEAB;
+  margin-bottom:18px;
+}
+
+.why-card h3{
+  font-family:'Cormorant Garamond', serif;
+  font-size:40px;
+  margin-bottom:18px;
+}
+
+.why-card p{
+  line-height:1.9;
+}
+
+/* =========================================
+TIMELINE
+========================================= */
+
+.timeline-section{
+  background:#F6F3EF;
+}
+
+.timeline{
+  position:relative;
+  max-width:900px;
+  margin:0 auto;
+}
+
+.timeline::before{
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:30px;
+  width:1px;
+  background:#D5C2B0;
+}
+
+.timeline-item{
+  position:relative;
+  padding-left:100px;
+  margin-bottom:70px;
+}
+
+.timeline-dot{
+  position:absolute;
+  left:18px;
+  top:10px;
+
+  width:24px;
+  height:24px;
+
+  border-radius:50%;
+  background:#B89E8B;
+  border:5px solid #F6F3EF;
+}
+
+.timeline-content{
+  background:#fff;
+  padding:40px;
+}
+
+.timeline-content h3{
+  font-family:'Cormorant Garamond', serif;
+  font-size:40px;
+  margin-bottom:14px;
+}
+
+.timeline-content p{
+  line-height:2;
+}
+
+/* =========================================
+TESTIMONIALS
+========================================= */
+
+.testimonials{
+  padding:140px 0;
+}
+
+.testimonials-bg{
+  position:absolute;
+  inset:0;
+
+  background:
+  linear-gradient(rgba(22,16,13,.68), rgba(22,16,13,.68)),
+  url("https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=2070&auto=format&fit=crop")
+  center center/cover no-repeat fixed;
+}
+
+.testimonialSwiper .swiper-wrapper{
+  align-items:stretch;
+}
+
+.testimonialSwiper .swiper-slide{
+  height:auto;
+}
+
+.testimonial-card{
+  background:rgba(255,255,255,.92);
+
+  backdrop-filter:blur(10px);
+
+  padding:60px 40px;
+
+  border-radius:10px;
+
+  text-align:center;
+
+  max-width:820px;
+
+  margin:0 auto;
+
+  height:100%;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.avatar{
+  width:90px;
+  height:90px;
+  border-radius:50%;
+  background:#98A4AD;
+
+  margin:0 auto 24px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  color:#fff;
+
+  font-size:36px;
+}
+
+.testimonial-name{
+  font-family:'Cormorant Garamond', serif;
+  font-size:42px;
+  margin-bottom:12px;
+}
+
+.stars{
+  color:#D7A437;
+  margin-bottom:24px;
+  letter-spacing:4px;
+  font-size:22px;
+}
+
+.testimonial-card p{
+  line-height:2;
+  font-style:italic;
+  color:#5F5752;
+}
+
+/* =========================================
+CTA
+========================================= */
+
+.final-cta{
+  background:#1E1511;
+  color:#fff;
+  text-align:center;
+  padding:140px 0;
+}
+
+.final-cta h2{
+  font-family:'Cormorant Garamond', serif;
+  font-size:76px;
+  line-height:1;
+  margin-bottom:28px;
+}
+
+.final-cta p{
+  max-width:760px;
+  margin:0 auto 40px;
+  line-height:2;
+  color:rgba(255,255,255,.82);
+}
+
+/* =========================================
+REVEAL
+========================================= */
+
+.reveal{
+  opacity:0;
+  transform:translateY(80px);
+  transition:1s cubic-bezier(.19,1,.22,1);
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* =========================================
+RESPONSIVO
+========================================= */
+
+@media(max-width:1024px){
+
+  .story-grid{
+    grid-template-columns:1fr;
+  }
+
+  .why-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .container{
+    padding:0 20px;
+  }
+
+  .menu-link{
+    font-size:42px;
+  }
+
+  .hero-content{
+    padding-top:180px;
+  }
+
+  .hero h1{
+    font-size:54px;
+  }
+
+  .hero p{
+    font-size:15px;
+  }
+
+  .btn{
+    width:100%;
+  }
+
+  .section{
+    padding:90px 0;
+  }
+
+  .section-title h2{
+    font-size:44px;
+  }
+
+  .story-image img{
+    height:500px;
+  }
+
+  .story-text h2{
+    font-size:42px;
+  }
+
+  .service-card{
+    height:520px;
+  }
+
+  .service-btn{
+    width:100%;
+  }
+
+  .emotion-section{
+    padding:90px 0;
+  }
+
+  .emotion-content{
+    padding:60px 28px;
+  }
+
+  .emotion-mini{
+    font-size:28px;
+  }
+
+  .emotion-content h2{
+    font-size:clamp(36px, 11vw, 54px);
+    line-height:1.08;
+  }
+
+  .emotion-highlight{
+    font-size:30px;
+  }
+
+  .why-card{
+    padding:40px 30px;
+  }
+
+  .timeline::before{
+    left:16px;
+  }
+
+  .timeline-item{
+    padding-left:55px;
+  }
+
+  .timeline-dot{
+    left:4px;
+  }
+
+  .timeline-content{
+    padding:30px;
+  }
+
+  .testimonial-card{
+    padding:50px 26px;
+    min-height:420px;
+  }
+
+  .final-cta h2{
+    font-size:46px;
+  }
+
+}
+
+@media(max-width:480px){
+
+  .hero h1{
+    font-size:44px;
+  }
+
+  .section-title h2{
+    font-size:38px;
+  }
+
+  .emotion-content{
+    padding:50px 22px;
+  }
+
+  .emotion-content h2{
+    font-size:clamp(32px, 10vw, 42px);
+  }
+
+  .emotion-highlight{
+    font-size:26px;
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- MENU -->
+
+<div class="menu" id="menu">
+
+  <div class="menu-close" id="menuClose">
+    ✕
+  </div>
+
+  <div class="menu-links">
+
+    <a href="#inicio" class="menu-link">Início</a>
+    <a href="#sobre" class="menu-link">Sobre</a>
+    <a href="#servicos" class="menu-link">Serviços</a>
+    <a href="#emocao" class="menu-link">Emoção</a>
+    <a href="#diferenciais" class="menu-link">Diferenciais</a>
+    <a href="#depoimentos" class="menu-link">Depoimentos</a>
+    <a href="#contato" class="menu-link">Contato</a>
+
+  </div>
+
+</div>
+
+<!-- HEADER -->
+
+<header id="header">
+
+  <div class="container header-flex">
+
+    <div class="logo">
+      <img src="lilica-patisserie-bem-casados-white.png" alt="Lilica Patisserie">
+    </div>
+
+    <div class="hamburger" id="hamburger">
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </div>
+
+  </div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="inicio">
+
+  <div class="container hero-content">
+
+    <div class="hero-subtitle">
+      Bem-casados artesanais
+    </div>
+
+    <h1>
+      O detalhe mais elegante e inesquecível do seu casamento
+    </h1>
+
+    <p>
+      Encante seus convidados com bem-casados artesanais feitos à mão e embalados com sofisticação.
+    </p>
+
+    <a href="#contato" class="btn">
+      Solicitar orçamento
+    </a>
+
+  </div>
+
+</section>
+
+<!-- STORY -->
+
+<section class="section story" id="sobre">
+
+  <div class="container">
+
+    <div class="story-grid">
+
+      <div class="story-image reveal">
+
+        <img src="./images/bem-casados-servidos.png">
+
+      </div>
+
+      <div class="story-text reveal">
+
+        <h2>
+          O casamento passa rápido. A lembrança fica.
+        </h2>
+
+        <p>
+          O bem-casado é um símbolo de união, prosperidade e carinho compartilhado entre os noivos e seus convidados.
+        </p>
+
+        <p>
+          Cada detalhe é pensado para criar uma experiência emocional elegante.
+        </p>
+
+        <div class="check-list">
+
+          <div class="check-item">
+
+            <div class="check-icon">
+              ✓
+            </div>
+
+            Embalagens sofisticadas e personalizadas
+
+          </div>
+
+          <div class="check-item">
+
+            <div class="check-icon">
+              ✓
+            </div>
+
+            Produção artesanal premium
+
+          </div>
+
+          <div class="check-item">
+
+            <div class="check-icon">
+              ✓
+            </div>
+
+            Experiência memorável para os convidados
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="section services" id="servicos">
+
+  <div class="container">
+
+    <div class="section-title reveal">
+
+      <span>Serviços</span>
+
+      <h2>
+        Criados para momentos inesquecíveis
+      </h2>
+
+    </div>
+
+    <div class="swiper servicesSwiper">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+
+          <div class="service-card">
+
+            <img src="bem-casados-verdes.png">
+
+            <div class="service-overlay"></div>
+
+            <div class="service-content">
+
+              <h3>
+                Casamentos sofisticados
+              </h3>
+
+              <p>
+                Bem-casados refinados feitos para cerimônias elegantes.
+              </p>
+
+              <a href="#contato" class="service-btn">
+                Entrar em contato
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="swiper-slide">
+
+          <div class="service-card">
+
+            <img src="bem-nascidos.webp">
+
+            <div class="service-overlay"></div>
+
+            <div class="service-content">
+
+              <h3>
+                Bem-nascidos especiais
+              </h3>
+
+              <p>
+                Delicadeza artesanal para celebrar novos começos.
+              </p>
+
+              <a href="#contato" class="service-btn">
+                Entrar em contato
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="swiper-slide">
+
+          <div class="service-card">
+
+            <img src="bem-coorporativo.webp">
+
+            <div class="service-overlay"></div>
+
+            <div class="service-content">
+
+              <h3>
+                Eventos corporativos
+              </h3>
+
+              <p>
+                Personalizações exclusivas para eventos sofisticados.
+              </p>
+
+              <a href="#contato" class="service-btn">
+                Entrar em contato
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- NOVA DOBRA EMOCIONAL -->
+
+<section class="emotion-section" id="emocao">
+
+  <div class="emotion-bg"></div>
+
+  <div class="container">
+
+    <div class="emotion-content reveal">
+
+      <span class="emotion-mini">
+        Existe um momento que ninguém esquece
+      </span>
+
+      <h2>
+        Quando o convidado leva um pedaço do seu casamento para casa
+      </h2>
+
+      <div class="emotion-divider"></div>
+
+      <p>
+        O bem-casado é o último detalhe que o convidado recebe — e muitas vezes o mais lembrado.
+      </p>
+
+      <div class="emotion-highlight">
+        Sofisticação, delicadeza e emoção em cada detalhe.
+      </div>
+
+      <a href="#contato" class="btn">
+        Solicitar orçamento
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- WHY -->
+
+<section class="section why" id="diferenciais">
+
+  <div class="container">
+
+    <div class="section-title reveal">
+
+      <span>Diferenciais</span>
+
+      <h2>
+        Muito além de um doce
+      </h2>
+
+    </div>
+
+    <div class="why-grid">
+
+      <div class="why-card reveal">
+
+        <div class="why-number">
+          01
+        </div>
+
+        <h3>
+          Elegância
+        </h3>
+
+        <p>
+          O detalhe que transforma a experiência do convidado.
+        </p>
+
+      </div>
+
+      <div class="why-card reveal">
+
+        <div class="why-number">
+          02
+        </div>
+
+        <h3>
+          Emoção
+        </h3>
+
+        <p>
+          Uma lembrança afetiva do grande dia.
+        </p>
+
+      </div>
+
+      <div class="why-card reveal">
+
+        <div class="why-number">
+          03
+        </div>
+
+        <h3>
+          Exclusividade
+        </h3>
+
+        <p>
+          Produção artesanal com acabamento premium.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- TIMELINE -->
+
+<section class="section timeline-section">
+
+  <div class="container">
+
+    <div class="section-title reveal">
+
+      <span>Processo</span>
+
+      <h2>
+        Cada detalhe importa
+      </h2>
+
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-content">
+
+          <h3>
+            Escolha da identidade
+          </h3>
+
+          <p>
+            Definimos juntos o estilo e acabamentos.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="timeline-item reveal">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-content">
+
+          <h3>
+            Produção artesanal
+          </h3>
+
+          <p>
+            Cada unidade é feita manualmente.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="timeline-item reveal">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-content">
+
+          <h3>
+            Entrega perfeita
+          </h3>
+
+          <p>
+            Seus convidados recebem uma lembrança inesquecível.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+
+<section class="testimonials" id="depoimentos">
+
+  <div class="testimonials-bg"></div>
+
+  <div class="container">
+
+    <div class="section-title reveal">
+
+      <span style="color:#fff;">
+        Depoimentos
+      </span>
+
+      <h2 style="color:#fff;">
+        O que as noivas dizem
+      </h2>
+
+    </div>
+
+    <div class="swiper testimonialSwiper reveal">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+
+          <div class="testimonial-card">
+
+            <div class="avatar">
+              A
+            </div>
+
+            <div class="testimonial-name">
+              Ana Piffer
+            </div>
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              “Excelente, fui muito bem atendida, encomendei 700 bem casados, que ficaram muito bonitos, bem embalados e deliciosos. Foi para o casamento da minha sobrinha/neta e os bem casados foram muito elogiados.afirmei à empresa que, com certeza, vou recomenda-los.
+”
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="swiper-slide">
+
+          <div class="testimonial-card">
+
+            <div class="avatar">
+              A
+            </div>
+
+            <div class="testimonial-name">
+              Amanda Alves
+            </div>
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              “Que experiência incrível! Gente, não tem como se arrepender quando se investe em qualidade. Rodei São Paulo para conhecê-los e valeu cada segundo. Que capricho, que atendimento e que doce PERFEITO. Só confiem. Ganharam uma cliente e fã.”
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="swiper-slide">
+
+          <div class="testimonial-card">
+
+            <div class="avatar">
+              J
+            </div>
+
+            <div class="testimonial-name">
+              Jefferson Calli
+            </div>
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              “Pensem em uns bem casados deliciosos, a apresentação então nem se fala, elegantíssima, obrigado e daqui espero muito mais clientes, abraço grande 😊”
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="swiper-slide">
+
+          <div class="testimonial-card">
+
+            <div class="avatar">
+              G
+            </div>
+
+            <div class="testimonial-name">
+              GIOVANA MORAES
+            </div>
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              “Precisei de bem casados de última hora. Fui super bem atendida desde o primeiro contato e quando peguei os doces foi uma experiência incrível. Capricho na embalagem e no sabor, doce na medida certa e massa molhadinha. Recomendo fortemente.”
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="swiper-slide">
+
+          <div class="testimonial-card">
+
+            <div class="avatar">
+              M
+            </div>
+
+            <div class="testimonial-name">
+              Mariana Vagula
+            </div>
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              “Fiz os doces do meu casamento com eles, o bem casado e super recomendo! Massa muito macia, não cheira ovo e o doce de leite é muito bom!! Nota mil”
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="swiper-slide">
+
+          <div class="testimonial-card">
+
+            <div class="avatar">
+              M
+            </div>
+
+            <div class="testimonial-name">
+              Maria Karoline De Sousa Alencar
+            </div>
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              “Foram super queridos desde a degustação até a entrega! O Bem-casado é bem molhadinho e na medida certa do doce! Comprei para o meu casamento e não me arrependo, super recomendo ❤️❤️”
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="final-cta" id="contato">
+
+  <div class="container reveal">
+
+    <h2>
+      Seu casamento merece ser inesquecível
+    </h2>
+
+    <p>
+      Solicite um orçamento personalizado e transforme seus bem-casados em uma experiência memorável.
+    </p>
+
+   
+
+<div class="cta-form-wrapper">
+
+  <form id="whatsappForm" class="cta-form">
+
+    <div class="form-grid">
+
+      <!-- NOME -->
+
+      <div class="form-group">
+
+        <label>
+          Seu nome
+        </label>
+
+        <input
+          type="text"
+          id="nome"
+          placeholder="Digite seu nome"
+          required
+        >
+
+      </div>
+
+      <!-- QUANTIDADE -->
+
+      <div class="form-group">
+
+        <label>
+          Quantidade de bem-casados
+        </label>
+
+        <input
+          type="number"
+          id="quantidade"
+          placeholder="Mínimo 50 unidades"
+          min="50"
+          required
+        >
+
+      </div>
+
+      <!-- DATA -->
+
+      <div class="form-group">
+
+        <label>
+          Data do evento
+        </label>
+
+        <input
+          type="date"
+          id="dataEvento"
+          required
+        >
+
+      </div>
+
+      <!-- TIPO -->
+
+      <div class="form-group">
+
+        <label>
+          Tipo do evento
+        </label>
+
+        <select id="tipoEvento" required>
+
+          <option value="">
+            Selecione
+          </option>
+
+          <option>
+            Casamento
+          </option>
+
+          <option>
+            Noivado
+          </option>
+
+          <option>
+            Bem-nascido
+          </option>
+
+          <option>
+            Evento corporativo
+          </option>
+
+          <option>
+            Outro
+          </option>
+
+        </select>
+
+      </div>
+
+    </div>
+
+    <!-- OBSERVAÇÃO -->
+
+    <div class="form-group full">
+
+      <label>
+        Observações
+      </label>
+
+      <textarea
+        id="observacoes"
+        placeholder="Conte um pouco sobre o seu evento..."
+      ></textarea>
+
+    </div>
+
+    <button type="submit" class="btn form-btn">
+      Solicitar orçamento no WhatsApp
+    </button>
+
+  </form>
+
+</div>
+
+  </div>
+
+</section>
+
+<footer class="footer">
+
+  <div class="container">
+
+    <div class="footer-top">
+
+      <!-- BRAND -->
+      <div class="footer-brand">
+
+        <div class="footer-logo">
+           <img src="lilica-patisserie-bem-casados-white.png" alt="Lilica Patisserie">
+        </div>
+
+        <p>
+          Bem-casados artesanais feitos para transformar o seu casamento em uma memória inesquecível.
+        </p>
+
+        <a href="#contato" class="footer-btn">
+          Solicitar orçamento
+        </a>
+
+      </div>
+
+      <!-- LINKS -->
+      <div class="footer-column">
+
+        <h3>
+          Navegação
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="#inicio">Início</a>
+          </li>
+
+          <li>
+            <a href="#sobre">Sobre</a>
+          </li>
+
+          <li>
+            <a href="#servicos">Serviços</a>
+          </li>
+
+          <li>
+            <a href="#depoimentos">Depoimentos</a>
+          </li>
+
+          <li>
+            <a href="#contato">Contato</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <!-- CONTATO -->
+      <div class="footer-column">
+
+        <h3>
+          Contato
+        </h3>
+
+        <ul>
+
+          <li>
+            WhatsApp: (11) 96120-6560
+          </li>
+
+          <li>
+            Instagram: @lilica.patisserie
+          </li>
+
+          <li>
+            São Paulo • SP
+          </li>
+
+          <li>
+            Atendimento sob encomenda
+          </li>
+
+        </ul>
+
+      </div>
+
+      <!-- FRASE -->
+      <div class="footer-column">
+
+        <h3>
+          Cada detalhe importa
+        </h3>
+
+        <p class="footer-phrase">
+          Porque o último doce do casamento também merece ser o mais inesquecível.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 Lilica Patisserie • Todos os direitos reservados.
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
+<button class="back-to-top" id="backToTop">
+
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="22"
+    height="22"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path d="M18 15l-6-6-6 6"/>
+  </svg>
+
+</button>
+
+<!-- SWIPER -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+/* =========================================
+FORM WHATSAPP
+COLE NO JS
+========================================= */
+
+const whatsappForm = document.getElementById("whatsappForm");
+
+whatsappForm.addEventListener("submit", function(event){
+
+  event.preventDefault();
+
+  const nome = document.getElementById("nome").value;
+  const quantidade = document.getElementById("quantidade").value;
+  const dataEvento = document.getElementById("dataEvento").value;
+  const tipoEvento = document.getElementById("tipoEvento").value;
+  const observacoes = document.getElementById("observacoes").value;
+
+  if(Number(quantidade) < 50){
+
+    alert("O pedido mínimo é de 50 bem-casados.");
+
+    return;
+
+  }
+
+  const mensagem = 
+`Olá, gostaria de solicitar um orçamento para bem-casados ✨
+
+👰 Nome: ${nome}
+
+🎉 Tipo de evento: ${tipoEvento}
+
+🍰 Quantidade de bem-casados: ${quantidade}
+
+📅 Data do evento: ${dataEvento}
+
+📝 Observações:
+${observacoes}
+
+Aguardo mais informações 💖`;
+
+  const numero = "559619206560";
+
+  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+
+  window.open(url, "_blank");
+
+});
+/* MENU */
+
+const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("menu");
+const menuClose = document.getElementById("menuClose");
+
+hamburger.addEventListener("click", () => {
+
+  hamburger.classList.toggle("active");
+  menu.classList.toggle("active");
+
+});
+
+menuClose.addEventListener("click", () => {
+
+  hamburger.classList.remove("active");
+  menu.classList.remove("active");
+
+});
+
+document.querySelectorAll(".menu-link").forEach((link) => {
+
+  link.addEventListener("click", () => {
+
+    hamburger.classList.remove("active");
+    menu.classList.remove("active");
+
+  });
+
+});
+
+/* HEADER */
+
+const header = document.getElementById("header");
+
+window.addEventListener("scroll", () => {
+
+  if(window.scrollY > 50){
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+
+});
+
+/* REVEAL */
+
+const reveals = document.querySelectorAll(".reveal");
+
+function revealElements(){
+
+  reveals.forEach((element) => {
+
+    const top = element.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if(top < windowHeight - 120){
+      element.classList.add("active");
+    }
+
+  });
+
+}
+
+window.addEventListener("scroll", revealElements);
+
+revealElements();
+
+/* SERVICES SWIPER */
+
+new Swiper(".servicesSwiper", {
+
+  slidesPerView:1.1,
+  spaceBetween:20,
+  loop:true,
+
+  pagination:{
+    el:".servicesSwiper .swiper-pagination",
+    clickable:true,
+  },
+
+  breakpoints:{
+
+    768:{
+      slidesPerView:2,
+      spaceBetween:24,
+    },
+
+    1024:{
+      slidesPerView:3,
+      spaceBetween:30,
+    }
+
+  }
+
+});
+
+/* TESTIMONIALS */
+
+new Swiper(".testimonialSwiper", {
+
+  slidesPerView:1,
+  loop:true,
+
+  autoplay:{
+    delay:5000,
+  },
+
+  pagination:{
+    el:".testimonialSwiper .swiper-pagination",
+    clickable:true,
+  }
+
+});
+/* =========================================
+BACK TO TOP
+COLE NO JS
+========================================= */
+
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+
+  if(window.scrollY > 500){
+
+    backToTop.classList.add("active");
+
+  } else {
+
+    backToTop.classList.remove("active");
+
+  }
+
+});
+
+backToTop.addEventListener("click", () => {
+
+  window.scrollTo({
+
+    top:0,
+    behavior:"smooth"
+
+  });
+
+});
+</script>
+
+
+</body>
+</html>
