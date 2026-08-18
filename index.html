@@ -2461,12 +2461,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
-document.getElementById('meu-cta').addEventListener('click', function() {
-  dataLayer.push({
-    event: 'cta_conversion',
-    cta_name: 'comprar_header'
-  });
-});
+// CORREÇÃO: o disparo de conversão foi removido do clique (fase pre-validação)
+// e movido para dentro do submit, DEPOIS que passa em todas as validações
+// e o WhatsApp é de fato aberto. Assim só conta conversão real (in-page).
 
 const whatsappForm = document.getElementById("whatsappForm");
 
@@ -2484,7 +2481,7 @@ whatsappForm.addEventListener("submit", function(event){
 
     alert("O pedido mínimo é de 50 bem-casados.");
 
-    return;
+    return; // sai aqui, SEM disparar conversão
 
   }
 
@@ -2509,6 +2506,12 @@ Aguardo mais informações 💖`;
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
 
   window.open(url, "_blank");
+
+  // Conversão disparada SÓ AQUI: formulário validado e WhatsApp aberto de verdade
+  dataLayer.push({
+    event: 'cta_conversion',
+    cta_name: 'comprar_header'
+  });
 
 });
 /* MENU */
