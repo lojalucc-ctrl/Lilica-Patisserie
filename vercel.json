@@ -1,0 +1,26 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "lilica-patisserie-ap42uqkt5-lilica-patisserie-s-projects.vercel.app"
+        }
+      ],
+      "destination": "https://www.lilicapatisserie.com.br/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "lilica-patisserie-git-main-lilica-patisserie-s-projects.vercel.app"
+        }
+      ],
+      "destination": "https://www.lilicapatisserie.com.br/$1",
+      "permanent": true
+    }
+  ]
+}
